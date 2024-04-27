@@ -9,6 +9,8 @@
 
 This package is mostly inspired by Shafaei-Bajestan, E., Moradipour-Tari, M., Uhrig, P., & Baayen, R. H. (2023). LDL-AURIS: a computational model, grounded in error-driven learning, for the comprehension of single spoken words. *Language, Cognition and Neuroscience, 38(4)*, 509–536. https://doi.org/10.1080/23273798.2021.1954207 and their Python package `pyLDLauris`.
 
+Check the [documentation](https://dosc91.github.io/CFBSr/index.html) for further information.
+
 
 # How to Install
 
