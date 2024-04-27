@@ -1,4 +1,4 @@
-# SfL <img src='https://dominicschmitz.com/wp-content/uploads/2021/11/SfL_logo.png' align="right" height="138" />
+# CFBSr <img src='https://github.com/dosc91/CFBSr/blob/main/CFBSr_logo.png' align="right" height="138" />
 
 <!-- badges: start -->
 ![](https://img.shields.io/badge/version-0.1.0-FFA70B.svg)
@@ -18,7 +18,7 @@ The preferred way to install this package is through devtools:
 # if devtools has not been installed yet, please install it first
 # install.packages("devtools")
 
-# then, install the SfL package
+# then, install the CFBSr package
 devtools::install_github("dosc91/CFBSr")
 ```
 
