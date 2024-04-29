@@ -4,7 +4,7 @@
 \alias{get_word_duration}
 \title{Get word durations, starts, ends}
 \usage{
-get_word_duration(tg_files, main_tier, extra_tier = NULL, encoding = "UTF-8")
+get_word_duration(tg_files, main_tier, extra_tier = NULL, encoding = "auto")
 }
 \arguments{
 \item{tg_files}{A vector of all TextGrid files you want to include. Typically created with \code{get_corpus_files}.}
