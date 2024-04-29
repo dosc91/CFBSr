@@ -25,7 +25,7 @@
 #' @import rPraat
 #' @export
 
-get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding = "UTF-8"){
+get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding = "auto"){
 
   if(is.character(main_tier) & is.numeric(extra_tier) | is.numeric(main_tier) & is.character(extra_tier)){
 
@@ -45,45 +45,49 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
 
       non_empty <- which(tg_run[[main_id]]$label != "")
 
-      if(!is.null(extra_tier)){
-
-        extra_id <- which(names(tg_run) == extra_tier)
-
-        extra_name <- tg.getTierName(tg_run, extra_id)
-
-        non_empty_extra <- which(tg_run[[extra_id]]$label != "")
-
-        if(length(non_empty) != length(non_empty_extra)){
-
-          stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
-
-        }
-
-      }
-
-      tg_df <- data.frame()
-
-      for(m in 1:length(non_empty)){
-
-        dur_run <- tg.getIntervalDuration(tg_run, main_id, index = non_empty[m])
-        sta_run <- tg.getIntervalStartTime(tg_run, main_id, index = non_empty[m])
-        end_run <- tg.getIntervalEndTime(tg_run, main_id, index = non_empty[m])
-
-        tg_df[m,1] <- tg.getLabel(tg_run, main_id, index = non_empty[m])
-        tg_df[m,2] <- dur_run
-        tg_df[m,3] <- sta_run
-        tg_df[m,4] <- end_run
-        tg_df[m,5] <- tg_files[i]
+      if(length(non_empty) != 0){
 
         if(!is.null(extra_tier)){
 
-          tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+          extra_id <- which(names(tg_run) == extra_tier)[1]
+
+          extra_name <- tg.getTierName(tg_run, extra_id)
+
+          non_empty_extra <- which(tg_run[[extra_id]]$label != "")
+
+          if(length(non_empty) != length(non_empty_extra)){
+
+            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
+
+          }
 
         }
 
-      }
+        tg_df <- data.frame()
 
-      wd_df <- rbind(wd_df, tg_df)
+        for(m in 1:length(non_empty)){
+
+          dur_run <- tg.getIntervalDuration(tg_run, main_id, index = non_empty[m])
+          sta_run <- tg.getIntervalStartTime(tg_run, main_id, index = non_empty[m])
+          end_run <- tg.getIntervalEndTime(tg_run, main_id, index = non_empty[m])
+
+          tg_df[m,1] <- tg.getLabel(tg_run, main_id, index = non_empty[m])
+          tg_df[m,2] <- dur_run
+          tg_df[m,3] <- sta_run
+          tg_df[m,4] <- end_run
+          tg_df[m,5] <- tg_files[i]
+
+          if(!is.null(extra_tier)){
+
+            tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+
+          }
+
+        }
+
+        wd_df <- rbind(wd_df, tg_df)
+
+      }
 
     }
 
@@ -105,45 +109,49 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
 
       non_empty <- which(tg_run[[main_id]]$label != "")
 
-      if(!is.null(extra_tier)){
-
-        extra_id <- extra_tier
-
-        extra_name <- tg.getTierName(tg_run, extra_id)
-
-        non_empty_extra <- which(tg_run[[extra_id]]$label != "")
-
-        if(length(non_empty) != length(non_empty_extra)){
-
-          stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
-
-        }
-
-      }
-
-      tg_df <- data.frame()
-
-      for(m in 1:length(non_empty)){
-
-        dur_run <- tg.getIntervalDuration(tg_run, main_id, index = non_empty[m])
-        sta_run <- tg.getIntervalStartTime(tg_run, main_id, index = non_empty[m])
-        end_run <- tg.getIntervalEndTime(tg_run, main_id, index = non_empty[m])
-
-        tg_df[m,1] <- tg.getLabel(tg_run, main_id, index = non_empty[m])
-        tg_df[m,2] <- dur_run
-        tg_df[m,3] <- sta_run
-        tg_df[m,4] <- end_run
-        tg_df[m,5] <- tg_files[i]
+      if(length(non_empty) != 0){
 
         if(!is.null(extra_tier)){
 
-          tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+          extra_id <- extra_tier
+
+          extra_name <- tg.getTierName(tg_run, extra_id)
+
+          non_empty_extra <- which(tg_run[[extra_id]]$label != "")
+
+          if(length(non_empty) != length(non_empty_extra)){
+
+            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
+
+          }
 
         }
 
-      }
+        tg_df <- data.frame()
 
-      wd_df <- rbind(wd_df, tg_df)
+        for(m in 1:length(non_empty)){
+
+          dur_run <- tg.getIntervalDuration(tg_run, main_id, index = non_empty[m])
+          sta_run <- tg.getIntervalStartTime(tg_run, main_id, index = non_empty[m])
+          end_run <- tg.getIntervalEndTime(tg_run, main_id, index = non_empty[m])
+
+          tg_df[m,1] <- tg.getLabel(tg_run, main_id, index = non_empty[m])
+          tg_df[m,2] <- dur_run
+          tg_df[m,3] <- sta_run
+          tg_df[m,4] <- end_run
+          tg_df[m,5] <- tg_files[i]
+
+          if(!is.null(extra_tier)){
+
+            tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+
+          }
+
+        }
+
+        wd_df <- rbind(wd_df, tg_df)
+
+      }
 
     }
 
