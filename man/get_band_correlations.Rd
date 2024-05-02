@@ -2,14 +2,14 @@
 % Please edit documentation in R/get_band_correlations.R
 \name{get_band_correlations}
 \alias{get_band_correlations}
-\title{Compute correlations between chunks of Mel-filterbank energy features}
+\title{Compute correlations between columns of Mel-filterbank energy features}
 \usage{
-get_band_correlations(band_samples, n_bands = 20, method = "spearman")
+get_band_correlations(band_samples, n_cols = 20, method = "spearman")
 }
 \arguments{
 \item{band_samples}{Samples of chunks of Mel-filterbank energy features. Typically created with \code{get_band_samples}.}
 
-\item{n_bands}{Number of bands that should be sampled. Defaults to \code{20}.}
+\item{n_cols}{Number of columns that should be sampled. Defaults to \code{20}.}
 
 \item{method}{A character string indicating which correlation coefficient (or covariance) is to be computed. One of \code{"spearman"} (default), \code{"kendall"}, or \code{"pearson"}: can be abbreviated.}
 }
@@ -17,7 +17,7 @@ get_band_correlations(band_samples, n_bands = 20, method = "spearman")
 A data frame.
 }
 \description{
-This function creates lists of sound and TextGrid files. This is the initial step of the CFBSF analysis.
+This function computes correlations between columns of Mel-filterbank energy features. Note: Currently, this function does not take into account chunk boundaries.
 }
 \examples{
 \dontrun{

@@ -4,18 +4,18 @@
 \alias{get_corpus_files}
 \title{Collect corpus sound files and TextGrids}
 \usage{
-get_corpus_files(path = NULL, sound_types = c("SPH", "SPN"))
+get_corpus_files(path = NULL, sound_types = "wav")
 }
 \arguments{
 \item{path}{The path to the directory containing sound and TextGrid files.}
 
-\item{sound_types}{The types of sound files that should be listed. Defaults to /code{c("SPH", "SPN")}.}
+\item{sound_types}{The types of sound files that should be listed. Defaults to /code{"wav}.}
 }
 \value{
 A list object.
 }
 \description{
-This function creates lists of sound and TextGrid files. This is the initial step of the CFBSF analysis.
+This function creates lists of sound and TextGrid files. This is the initial step of the CFBS analysis.
 }
 \examples{
 corpus_files <- get_corpus_files(path = "data", "wav")

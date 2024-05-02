@@ -36,7 +36,7 @@ get_word_sound_files(
 A list object.
 }
 \description{
-This function cuts sound files by non-empty intervals on a specified tier.
+This function cuts sound files by non-empty intervals on a specified tier. This tier commonly corresponds to the \code{main_tier} specified in \code{get_word_duration}.
 }
 \examples{
 \dontrun{get_word_sound_files(sound_files = corpus_files[[1]], word_durations = wd_df, extra_tier = "ID", subfolder = "test")}

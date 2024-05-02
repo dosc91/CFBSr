@@ -13,7 +13,7 @@ sphspn_to_wav(path)
 Nothing.
 }
 \description{
-Using a bash script, this function converts SPH and SPN sound files to wav files.
+Using a bash script, this function converts SPH and SPN sound files to wav files. Run this first if your sound files are not wav files.
 Note: Currently, this only works on Windows. Additionally, \code{SoX - Sound eXchange} must be installed before running this function, see https://sourceforge.net/projects/sox/.
 }
 \examples{

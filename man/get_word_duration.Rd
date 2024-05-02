@@ -4,7 +4,13 @@
 \alias{get_word_duration}
 \title{Get word durations, starts, ends}
 \usage{
-get_word_duration(tg_files, main_tier, extra_tier = NULL, encoding = "auto")
+get_word_duration(
+  tg_files,
+  main_tier,
+  extra_tier = NULL,
+  encoding = "auto",
+  skip = FALSE
+)
 }
 \arguments{
 \item{tg_files}{A vector of all TextGrid files you want to include. Typically created with \code{get_corpus_files}.}
@@ -14,6 +20,8 @@ get_word_duration(tg_files, main_tier, extra_tier = NULL, encoding = "auto")
 \item{extra_tier}{Optional: Include another tier. This tier will be used in unique identifier creation. Can be given by its name or by its index.}
 
 \item{encoding}{Defaults to \code{UTF-8}.}
+
+\item{skip}{Decides whether the function stops (default) or continues after encountering different numbers of non-empty intervals on \code{main_tier} and \code{extra_tier}. If set to \code{TRUE} it will continue and print files with discrepancies to the console.}
 }
 \value{
 A data frame.
