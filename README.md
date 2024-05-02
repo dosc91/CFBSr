@@ -1,4 +1,4 @@
-# CFBSr <img src='https://github.com/dosc91/CFBSr/blob/main/CFBSr_logo.png' align="right" height="138" />
+# CFBSr <img src='https://dominicschmitz.com/wp-content/uploads/2024/04/CFBSr_logo.png' align="right" height="138" />
 
 <!-- badges: start -->
 ![](https://img.shields.io/badge/version-0.1.0-FFA70B.svg)
@@ -23,6 +23,10 @@ The preferred way to install this package is through devtools:
 # then, install the CFBSr package
 devtools::install_github("dosc91/CFBSr")
 ```
+
+# Workflow
+
+<img src='https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v01.svg' align="center"/>
 
 
 # References
