@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 720 963">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-miterlimit: 8;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #156082;
+        stroke: #042433;
+      }
+
+      .cls-9 {
+        display: none;
+      }
+
+      .cls-9, .cls-10, .cls-11 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #4ea72e;
+        stroke: #1c440d;
+      }
+
+      .cls-5 {
+        fill: #0f9ed5;
+        stroke: #024059;
+      }
+
+      .cls-6 {
+        fill: #a02b93;
+        stroke: #410c3b;
+      }
+
+      .cls-10 {
+        font-size: 13px;
+      }
+
+      .cls-10, .cls-11 {
+        font-family: ArialMT, Arial;
+        isolation: isolate;
+      }
+
+      .cls-11 {
+        font-size: 19px;
+      }
+
+      .cls-7 {
+        fill: #196b24;
+        stroke: #052909;
+      }
+
+      .cls-8 {
+        fill: #e97132;
+        stroke: #622c0f;
+      }
+    </style>
+  </defs>
+  <rect class="cls-9" y="-40" width="720" height="1280"/>
+  <path class="cls-3" d="M55.4,27h128.2c16.8,0,30.4,17,30.4,38s-13.6,38-30.4,38H55.4c-16.8,0-30.4-17-30.4-38s13.6-38,30.4-38Z"/>
+  <text class="cls-11" transform="translate(63.1 71)"><tspan x="0" y="0">SPN/SPH files</tspan></text>
+  <path class="cls-3" d="M536.4,27h128.2c16.8,0,30.4,17,30.4,38s-13.6,38-30.4,38h-128.2c-16.8,0-30.4-17-30.4-38s13.6-38,30.4-38Z"/>
+  <text class="cls-11" transform="translate(565.9 71)"><tspan x="0" y="0">wav files</tspan></text>
+  <path class="cls-5" d="M296.2,27h127.5c16.7,0,30.2,17,30.2,38s-13.5,38-30.2,38h-127.5c-16.7,0-30.2-17-30.2-38s13.5-38,30.2-38Z"/>
+  <text class="cls-11" transform="translate(308.3 71)"><tspan x="0" y="0">TextGrid</tspan></text>
+  <text class="cls-11" transform="translate(377.9 71)"><tspan x="0" y="0">files</tspan></text>
+  <path class="cls-1" d="M25,242l37.8-76h151.2l-37.8,76H25Z"/>
+  <text class="cls-11" transform="translate(74.9 202)"><tspan x="0" y="0">conversion</tspan></text>
+  <text class="cls-10" transform="translate(74.5 220)"><tspan x="0" y="0">sphspn_to_wav</tspan></text>
+  <rect class="cls-7" x="266" y="166" width="188" height="76"/>
+  <text class="cls-11" transform="translate(333.6 202)"><tspan x="0" y="0">file list</tspan></text>
+  <text class="cls-10" transform="translate(312.7 220)"><tspan x="0" y="0">get_corpus_files</tspan></text>
+  <rect class="cls-7" x="266" y="306" width="188" height="75"/>
+  <text class="cls-11" transform="translate(292.2 341)"><tspan x="0" y="0">word boundaries</tspan></text>
+  <text class="cls-10" transform="translate(306 359)"><tspan x="0" y="0">get_word_duration</tspan></text>
+  <rect class="cls-7" x="266" y="445" width="188" height="76"/>
+  <text class="cls-11" transform="translate(293.9 481)"><tspan x="0" y="0">word sound files</tspan></text>
+  <text class="cls-10" transform="translate(297.2 499)"><tspan x="0" y="0">get_word_sound_files</tspan></text>
+  <rect class="cls-4" x="136" y="584" width="189" height="76"/>
+  <text class="cls-11" transform="translate(157.4 620)"><tspan x="0" y="0">chunk boundaries</tspan></text>
+  <text class="cls-10" transform="translate(172.9 638)"><tspan x="0" y="0">get_chunk_duration</tspan></text>
+  <rect class="cls-4" x="395" y="584" width="189" height="76"/>
+  <text class="cls-11" transform="translate(441.5 620)"><tspan x="0" y="0">FBS via MEL</tspan></text>
+  <text class="cls-10" transform="translate(437.3 638)"><tspan x="0" y="0">get_mel</tspan></text>
+  <text class="cls-10" transform="translate(485.8 638)"><tspan x="0" y="0">or</tspan></text>
+  <text class="cls-10" transform="translate(500.3 638)"><tspan x="0" y="0">get_fbs</tspan></text>
+  <path class="cls-2" d="M120,103v57h-2v-57h2ZM123,158.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M361,103v57h-2v-57h2ZM364,158.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M195,203h64v2h-64v-2ZM257.6,200l8,4-8,4v-8Z"/>
+  <path class="cls-2" d="M601.2,103v102.5h-140.6v-2h139.6l-1,1v-101.5h2ZM462,208.5l-8-4,8-4v8Z"/>
+  <path class="cls-2" d="M361,242v57h-2v-57h2ZM364,297.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M361,381v57h-2v-57h2ZM364,436.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M265.3,482h-36.3v95.8h2v-94.8l-1,1h35.3v-2ZM226,576.5l4,8,4-8h-8Z"/>
+  <path class="cls-2" d="M454,482h36.3v95.8h-2v-94.8l1,1h-35.3v-2ZM493.3,576.5l-4,8-4-8h8Z"/>
+  <rect class="cls-8" x="395" y="724" width="189" height="75"/>
+  <text class="cls-11" transform="translate(415.3 759)"><tspan x="0" y="0">sample n columns</tspan></text>
+  <text class="cls-10" transform="translate(435.2 777)"><tspan x="0" y="0">get</tspan></text>
+  <text class="cls-10" transform="translate(453.1 777)"><tspan x="0" y="0">_</tspan></text>
+  <text class="cls-10" transform="translate(459.2 777)"><tspan x="0" y="0">band_samples</tspan></text>
+  <path class="cls-6" d="M166.4,724h128.2c16.8,0,30.4,16.8,30.4,37.5s-13.6,37.5-30.4,37.5h-128.2c-16.8,0-30.4-16.8-30.4-37.5s13.6-37.5,30.4-37.5Z"/>
+  <text class="cls-11" transform="translate(196.6 756)"><tspan x="0" y="0">plot FBS</tspan></text>
+  <text class="cls-11" transform="translate(222.5 779)"><tspan x="0" y="0">…</tspan></text>
+  <rect class="cls-8" x="395" y="863" width="189" height="75"/>
+  <text class="cls-11" transform="translate(418.8 898)"><tspan x="0" y="0">band correlations</tspan></text>
+  <text class="cls-10" transform="translate(425.1 916)"><tspan x="0" y="0">get</tspan></text>
+  <text class="cls-10" transform="translate(443 916)"><tspan x="0" y="0">_</tspan></text>
+  <text class="cls-10" transform="translate(449.1 916)"><tspan x="0" y="0">band_correlations</tspan></text>
+  <path class="cls-2" d="M231,660v57h-2v-57h2ZM234,715.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M491,660v57h-2v-57h2ZM494,715.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M491,799v57h-2v-57h2ZM494,854.7l-4,8-4-8h8Z"/>
+  <path class="cls-2" d="M325,621h2v2h-2v-2ZM329,621h2v2h-2v-2ZM333,621h2v2h-2v-2ZM337,621h2v2h-2v-2ZM341,621h2v2h-2v-2ZM345,621h2v2h-2v-2ZM349,621h2v2h-2v-2ZM353,621h2v2h-2v-2ZM357,621h2v2h-2v-2ZM361,621h2v2h-2v-2ZM365,621h2v2h-2v-2ZM368.3,623.7v2h-2v-2h2ZM368.3,627.7v2h-2v-2h2ZM368.3,631.7v2h-2v-2h2ZM368.3,635.7v2h-2v-2h2ZM368.3,639.7v2h-2v-2h2ZM368.3,643.7v2h-2v-2h2ZM368.3,647.7v2h-2v-2h2ZM368.3,651.7v2h-2v-2h2ZM368.3,655.7v2h-2v-2h2ZM368.3,659.7v2h-2v-2h2ZM368.3,663.7v2h-2v-2h2ZM368.3,667.7v2h-2v-2h2ZM368.3,671.7v2h-2v-2h2ZM368.3,675.7v2h-2v-2h2ZM368.3,679.7v2h-2v-2h2ZM368.3,683.7v2h-2v-2h2ZM368.3,687.7v2h-2v-2h2ZM368.3,691.7v2h-2v-2h2ZM368.3,695.7v2h-2v-2h2ZM368.3,699.7v2h-2v-2h2ZM368.3,703.7v2h-2v-2h2ZM368.3,707.7v2h-2v-2h2ZM368.3,711.7v2h-2v-2h2ZM368.3,715.7v2h-2v-2h2ZM368.3,719.7v2h-2v-2h2ZM368.3,723.7v2h-2v-2h2ZM368.3,727.7v2h-2v-2h2ZM368.3,731.7v2h-2v-2h2ZM368.3,735.7v2h-2v-2h2ZM368.3,739.7v2h-2v-2h2ZM368.3,743.7v2h-2v-2h2ZM368.3,747.7v2h-2v-2h2ZM368.3,751.7v2h-2v-2h2ZM368.3,755.7v2h-2v-2h2ZM368.3,759.7v1.6l-1-1h.4v2h-1.4v-2.6h2ZM369.7,760.3h2v2h-2v-2ZM373.7,760.3h2v2h-2v-2ZM377.7,760.3h2v2h-2v-2ZM381.7,760.3h2v2h-2v-2ZM385.7,760.3h2v2h-2v-2ZM387.6,757.3l8,4-8,4v-8Z"/>
+  <path class="cls-2" d="M395.6,621h-43.3v140.3l1-1h-21.7v2h22.7v-140.3l-1,1h42.3v-2ZM333,757.3l-8,4,8,4v-8Z"/>
+</svg>
