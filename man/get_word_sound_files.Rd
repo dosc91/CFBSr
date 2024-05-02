@@ -8,7 +8,7 @@ get_word_sound_files(
   sound_files,
   word_durations,
   extra_tier = NULL,
-  subfolder = NULL,
+  directory,
   fileType = "auto",
   from = 1,
   to = Inf,
@@ -22,7 +22,7 @@ get_word_sound_files(
 
 \item{extra_tier}{Optional: Include another tier. This tier will be used in unique identifier creation. Can be given by its name or by its index.}
 
-\item{subfolder}{Specify the directory in which the new wav files should be saved. If none is specified, a new folder called 'chopped' is created.}
+\item{directory}{Specify the directory in which the new wav files should be saved.}
 
 \item{fileType}{Type of audio file: \code{"wav"}, \code{"mp3"}, or \code{"auto"}.}
 
@@ -39,7 +39,7 @@ A list object.
 This function cuts sound files by non-empty intervals on a specified tier. This tier commonly corresponds to the \code{main_tier} specified in \code{get_word_duration}.
 }
 \examples{
-\dontrun{get_word_sound_files(sound_files = corpus_files[[1]], word_durations = wd_df, extra_tier = "ID", subfolder = "test")}
+\dontrun{get_word_sound_files(sound_files = corpus_files[[1]], word_durations = wd_df, extra_tier = "ID", directory = "C:/Users/Project/chopped")}
 
 }
 \references{
