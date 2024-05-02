@@ -1,9 +1,9 @@
 #' Collect corpus sound files and TextGrids
 #'
-#' @description This function creates lists of sound and TextGrid files. This is the initial step of the CFBSF analysis.
+#' @description This function creates lists of sound and TextGrid files. This is the initial step of the CFBS analysis.
 #'
 #' @param path The path to the directory containing sound and TextGrid files.
-#' @param sound_types The types of sound files that should be listed. Defaults to /code{c("SPH", "SPN")}.
+#' @param sound_types The types of sound files that should be listed. Defaults to /code{"wav}.
 #'
 #' @return A list object.
 #'
@@ -14,7 +14,7 @@
 #'
 #' @export
 
-get_corpus_files <- function(path = NULL, sound_types = c("SPH", "SPN")){
+get_corpus_files <- function(path = NULL, sound_types = "wav"){
 
   if(is.null(path)){
 

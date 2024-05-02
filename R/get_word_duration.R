@@ -6,6 +6,7 @@
 #' @param main_tier The tier with your relevant intervals, e.g. words. Can be given by its name or by its index.
 #' @param extra_tier Optional: Include another tier. This tier will be used in unique identifier creation. Can be given by its name or by its index.
 #' @param encoding Defaults to \code{UTF-8}.
+#' @param skip Decides whether the function stops (default) or continues after encountering different numbers of non-empty intervals on \code{main_tier} and \code{extra_tier}. If set to \code{TRUE} it will continue and print files with discrepancies to the console.
 #'
 #' @return A data frame.
 #'
@@ -25,13 +26,15 @@
 #' @import rPraat
 #' @export
 
-get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding = "auto"){
+get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding = "auto", skip = FALSE){
 
   if(is.character(main_tier) & is.numeric(extra_tier) | is.numeric(main_tier) & is.character(extra_tier)){
 
     stop("Please specify both main_tier and extra_tier as either character or numeric value. Please resolve this issue.")
 
   }
+
+  disc = FALSE
 
   wd_df <- data.frame()
 
@@ -55,9 +58,15 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
 
           non_empty_extra <- which(tg_run[[extra_id]]$label != "")
 
-          if(length(non_empty) != length(non_empty_extra)){
+          if(length(non_empty) != length(non_empty_extra) & isFALSE(skip)){
 
-            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
+            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue. Issue in file no. ", i, " If this is correct, please use the `skip = TRUE` argument.")
+
+          }else if(length(non_empty) != length(non_empty_extra) & isTRUE(skip)){
+
+            print(paste("Discrepancy in non-empty intervals found for file no.", i))
+
+            disc = TRUE
 
           }
 
@@ -77,9 +86,13 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
           tg_df[m,4] <- end_run
           tg_df[m,5] <- tg_files[i]
 
-          if(!is.null(extra_tier)){
+          if(!is.null(extra_tier) & isFALSE(disc)){
 
             tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+
+          }else if(!is.null(extra_tier) & isTRUE(disc)){
+
+            tg_df[m,6] <- NA
 
           }
 
@@ -119,9 +132,15 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
 
           non_empty_extra <- which(tg_run[[extra_id]]$label != "")
 
-          if(length(non_empty) != length(non_empty_extra)){
+          if(length(non_empty) != length(non_empty_extra) & isFALSE(skip)){
 
-            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue.")
+            stop("Number of non-empty intervals on main_tier and extra_tier do not match. Please resolve this issue. Issue in file no. ", i, " If this is correct, please use the `skip = TRUE` argument.")
+
+          }else if(length(non_empty) != length(non_empty_extra) & isTRUE(skip)){
+
+            print(paste("Discrepancy in non-empty intervals found for file no.", i))
+
+            disc = TRUE
 
           }
 
@@ -141,9 +160,13 @@ get_word_duration <- function(tg_files, main_tier, extra_tier = NULL, encoding =
           tg_df[m,4] <- end_run
           tg_df[m,5] <- tg_files[i]
 
-          if(!is.null(extra_tier)){
+          if(!is.null(extra_tier) & isFALSE(disc)){
 
             tg_df[m,6] <- tg.getLabel(tg_run, extra_id, index = non_empty_extra[m])
+
+          }else if(!is.null(extra_tier) & isTRUE(disc)){
+
+            tg_df[m,6] <- NA
 
           }
 

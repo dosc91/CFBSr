@@ -1,6 +1,6 @@
 #' Cut sound files
 #'
-#' @description This function cuts sound files by non-empty intervals on a specified tier.
+#' @description This function cuts sound files by non-empty intervals on a specified tier. This tier commonly corresponds to the \code{main_tier} specified in \code{get_word_duration}.
 #'
 #' @param sound_files A vector of all wav files you want to include.
 #' @param word_durations The durations of words or other relevant intervals. Typically identified using \code{get_word_duration}.

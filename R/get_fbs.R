@@ -1,6 +1,6 @@
 #' Compute Mel-filterbank energy features from audio
 #'
-#' @description This function computes Mel-filterbank energy features from audio signals. Clone of \code{get_fbs}.
+#' @description This function computes Mel-filterbank energy features from audio signals. Clone of \code{get_mel}.
 #'
 #' @param chopped_dir Directory of the individual sound files. Typically created with \code{get_word_sound_files}.
 #' @param sample_rate Sample rate of your wav files. Default is \code{16000}.
@@ -18,14 +18,14 @@
 #' @references Signal developers. (2023). signal: Signal processing. Retrieved from https://r-forge.r-project.org/projects/signal/
 #'
 #' @examples
-#' \dontrun{mel_features <- get_mel(chopped_dir = "/chopped")}
+#' \dontrun{fbs_data <- get_fbs(chopped_dir = "/chopped")}
 #'
 #' @import tuneR
 #' @import signal
 #'
 #' @export
 
-get_mel <- function(chopped_dir, sample_rate = 16000, winlen = 0.005, steptime = 0.01, fft = 512, nfilt = 21, dither = FALSE){
+get_fbs <- function(chopped_dir, sample_rate = 16000, winlen = 0.005, steptime = 0.01, fft = 512, nfilt = 21, dither = FALSE){
 
   chopped_files <- list.files(chopped_dir, pattern = "*wav$", ignore.case = TRUE, full = T)
 
