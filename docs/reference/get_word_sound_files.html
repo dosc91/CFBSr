@@ -48,7 +48,7 @@
 <span>  <span class="va">sound_files</span>,</span>
 <span>  <span class="va">word_durations</span>,</span>
 <span>  extra_tier <span class="op">=</span> <span class="cn">NULL</span>,</span>
-<span>  subfolder <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  <span class="va">directory</span>,</span>
 <span>  fileType <span class="op">=</span> <span class="st">"auto"</span>,</span>
 <span>  from <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>  to <span class="op">=</span> <span class="cn">Inf</span>,</span>
@@ -70,8 +70,8 @@
 <dd><p>Optional: Include another tier. This tier will be used in unique identifier creation. Can be given by its name or by its index.</p></dd>
 
 
-<dt>subfolder</dt>
-<dd><p>Specify the directory in which the new wav files should be saved. If none is specified, a new folder called 'chopped' is created.</p></dd>
+<dt>directory</dt>
+<dd><p>Specify the directory in which the new wav files should be saved.</p></dd>
 
 
 <dt>fileType</dt>
@@ -107,7 +107,7 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">get_word_sound_files</span><span class="op">(</span>sound_files <span class="op">=</span> <span class="va">corpus_files</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, word_durations <span class="op">=</span> <span class="va">wd_df</span>, extra_tier <span class="op">=</span> <span class="st">"ID"</span>, subfolder <span class="op">=</span> <span class="st">"test"</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">get_word_sound_files</span><span class="op">(</span>sound_files <span class="op">=</span> <span class="va">corpus_files</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, word_durations <span class="op">=</span> <span class="va">wd_df</span>, extra_tier <span class="op">=</span> <span class="st">"ID"</span>, directory <span class="op">=</span> <span class="st">"C:/Users/Project/chopped"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
