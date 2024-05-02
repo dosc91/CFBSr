@@ -26,7 +26,7 @@ devtools::install_github("dosc91/CFBSr")
 
 # Workflow
 
-<img src='https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v01.svg' align="center"/>
+<img src='https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v01-1.svg' align="center"/>
 
 
 # References
