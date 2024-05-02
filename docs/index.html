@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">CFBSr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.0</span>
       </span>
     </div>
 
@@ -57,10 +57,10 @@
   <div class="contents col-md-9">
 
 <div class="section level1">
-<div class="page-header"><h1 id="cfbsr-">CFBSr <img src="https://github.com/dosc91/CFBSr/blob/main/CFBSr_logo.png" align="right" height="138"><a class="anchor" aria-label="anchor" href="#cfbsr-"></a>
+<div class="page-header"><h1 id="cfbsr-">CFBSr <img src="https://dominicschmitz.com/wp-content/uploads/2024/04/CFBSr_logo.png" align="right" height="138"><a class="anchor" aria-label="anchor" href="#cfbsr-"></a>
 </h1></div>
 <!-- badges: start -->
-<p><img src="https://img.shields.io/badge/version-0.1.0-FFA70B.svg"><img src="https://img.shields.io/github/last-commit/dosc91/CFBSr"><!-- badges: end --></p>
+<p><img src="https://img.shields.io/badge/version-0.2.0-FFA70B.svg"><img src="https://img.shields.io/github/last-commit/dosc91/CFBSr"><!-- badges: end --></p>
 <p><code>CFBSr</code> is a workflow to get C-FBS data from sound files and TextGrids. Lists files, cuts sound files, computes MEL features and MEL feature correlations of samples.</p>
 <p>This package is mostly inspired by Shafaei-Bajestan, E., Moradipour-Tari, M., Uhrig, P., &amp; Baayen, R. H. (2023). LDL-AURIS: a computational model, grounded in error-driven learning, for the comprehension of single spoken words. <em>Language, Cognition and Neuroscience, 38(4)</em>, 509–536. <a href="https://doi.org/10.1080/23273798.2021.1954207" class="external-link uri">https://doi.org/10.1080/23273798.2021.1954207</a> and their Python package <code>pyLDLauris</code>.</p>
 <p>Check the <a href="https://dosc91.github.io/CFBSr/index.html" class="external-link">documentation</a> for further information.</p>
@@ -77,14 +77,27 @@
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"dosc91/CFBSr"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level1">
+<h1 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
+</h1>
+<p><img src="https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v01-1.svg" align="center"></p>
+</div>
+<div class="section level1">
 <h1 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
 </h1>
 <p>Please cite the <code>CFBSr</code> package as follows:</p>
-<p>Schmitz, D. (2024). CFBSr: Create Continuous Frequency Band Summaries from Sound and TextGrid Files. R package version 0.1.0. URL: <a href="https://github.com/dosc91/CFBSr" class="external-link uri">https://github.com/dosc91/CFBSr</a></p>
+<p>Schmitz, D. (2024). CFBSr: Create Continuous Frequency Band Summaries from Sound and TextGrid Files. R package version 0.2.0. URL: <a href="https://github.com/dosc91/CFBSr" class="external-link uri">https://github.com/dosc91/CFBSr</a></p>
 <p>The following sources are made use of in the <code>CFBSr</code> package:</p>
+<p>Arnold, D. (2018). AcousticNDLCodeR: Coding Sound Files for Use with NDL. R package version 1.0.2. Retrieved from <a href="https://CRAN.R-project.org/package=AcousticNDLCodeR" class="external-link uri">https://CRAN.R-project.org/package=AcousticNDLCodeR</a></p>
+<p>Arnold, D., Tomaschek, F., Sering, K., Lopez, F., &amp; Baayen, R. H. (2017). Words from spontaneous conversational speech can be recognized with human-like accuracy by an error-driven learning algorithm that discriminates between meanings straight from smart acoustic features, bypassing the phoneme as recognition unit. PLOS ONE, 12(4), e0174623. <a href="https://doi.org/10.1371/journal.pone.0174623" class="external-link uri">https://doi.org/10.1371/journal.pone.0174623</a></p>
 <p>Bořil, T., &amp; Skarnitzl, R. (2016). Tools rPraat and mPraat. In P. Sojka, A. Horák, I. Kopeček, &amp; K. Pala (Eds.), Text, Speech, and Dialogue (pp. 367-374). Springer International Publishing.</p>
 <p>Ligges, U., Krey, S., Mersmann, O., &amp; Schnackenberg, S. (2023). tuneR: Analysis of Music and Speech. Retrieved from <a href="https://CRAN.R-project.org/package=tuneR" class="external-link uri">https://CRAN.R-project.org/package=tuneR</a></p>
 <p>Lyons, J., Wang, D. Y.-B., Gianluca, Shteingart, H., Mavrinac, E., Gaurkar, Y., Watcharawisetkul, W., Birch, S., Zhihe, L., Hölzl, J., Lesinskis, J., Almér, H., Lord, C., &amp; Stark, A. (2020). jameslyons/python_speech_features: release v0.6.1 (0.6.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.3607820" class="external-link uri">https://doi.org/10.5281/zenodo.3607820</a></p>
+<p>Shafaei-Bajestan, E., Moradipour-Tari, M., Uhrig, P., &amp; Baayen, R. H. (2023). LDL-AURIS: a computational model, grounded in error-driven learning, for the comprehension of single spoken words. Language, Cognition and Neuroscience, 38(4), 509–536. <a href="https://doi.org/10.1080/23273798.2021.1954207" class="external-link uri">https://doi.org/10.1080/23273798.2021.1954207</a></p>
+<p>Signal developers. (2023). signal: Signal processing. Retrieved from <a href="https://r-forge.r-project.org/projects/signal/" class="external-link uri">https://r-forge.r-project.org/projects/signal/</a></p>
+<p>Sueur, J., Aubin, T., &amp; Simonis, C. (2008). Seewave: a free modular tool for sound analysis and synthesis. Bioacoustics, 18(3), 213-226.</p>
+<p>Wickham, H. (2016). ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. ISBN 978-3-319-24277-4. Retrieved from <a href="https://ggplot2.tidyverse.org" class="external-link uri">https://ggplot2.tidyverse.org</a></p>
+<p>Wickham, H. (2007). Reshaping Data with the {reshape} Package. Journal of Statistical Software, 21(12), 1-20. Retrieved from <a href="http://www.jstatsoft.org/v21/i12/" class="external-link uri">http://www.jstatsoft.org/v21/i12/</a></p>
+<p>Zeileis, A., &amp; Grothendieck, G. (2005). zoo: S3 Infrastructure for Regular and Irregular Time Series. Journal of Statistical Software, 14(6), 1-27. <a href="https://doi.org/10.18637/jss.v014.i06" class="external-link uri">https://doi.org/10.18637/jss.v014.i06</a></p>
 </div>
 
   </div>

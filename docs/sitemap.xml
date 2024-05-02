@@ -25,7 +25,13 @@
     <loc>/reference/get_band_samples.html</loc>
   </url>
   <url>
+    <loc>/reference/get_chunk_duration.html</loc>
+  </url>
+  <url>
     <loc>/reference/get_corpus_files.html</loc>
+  </url>
+  <url>
+    <loc>/reference/get_fbs.html</loc>
   </url>
   <url>
     <loc>/reference/get_mel.html</loc>
@@ -38,6 +44,9 @@
   </url>
   <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/plot_CFBs.html</loc>
   </url>
   <url>
     <loc>/reference/sphspn_to_wav.html</loc>
