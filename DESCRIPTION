@@ -1,7 +1,7 @@
 Package: CFBSr
 Type: Package
 Title: Create Continuous Frequency Band Summaries from Sound and TextGrid Files
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: person("Dominic", "Schmitz", email = "dominic.schmitz@uni-duesseldorf.de", role = c("aut", "cre"))
 Description: A workflow to get C-FBS data from sound files and TextGrids. Lists files, cuts sound files, computes MEL features and MEL feature correlations of samples.
 License: MIT + file LICENSE

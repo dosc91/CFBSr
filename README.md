@@ -1,7 +1,7 @@
 # CFBSr <img src='https://dominicschmitz.com/wp-content/uploads/2024/04/CFBSr_logo.png' align="right" height="138" />
 
 <!-- badges: start -->
-![](https://img.shields.io/badge/version-0.2.0-FFA70B.svg)
+![](https://img.shields.io/badge/version-0.3.0-FFA70B.svg)
 ![](https://img.shields.io/github/last-commit/dosc91/CFBSr)
 <!-- badges: end -->
 
@@ -26,7 +26,7 @@ devtools::install_github("dosc91/CFBSr")
 
 # Workflow
 
-<img src='https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v01.svg' align="center"/>
+<img src='https://dominicschmitz.com/wp-content/uploads/2024/05/CFBSr_flowchart_v030.svg' align="center"/>
 
 
 # References

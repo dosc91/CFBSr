@@ -2,6 +2,7 @@
 
 export(get_band_correlations)
 export(get_band_samples)
+export(get_band_summaries)
 export(get_chunk_duration)
 export(get_corpus_files)
 export(get_fbs)
