@@ -1,6 +1,6 @@
-#' Compute correlations between columns of Mel-filterbank energy features
+#' Note: This function is deprecated
 #'
-#' @description This function computes correlations between columns of Mel-filterbank energy features. Note: Currently, this function does not take into account chunk boundaries.
+#' @description Note: This function is deprecated. This function computes correlations between columns of Mel-filterbank energy features. Note: Currently, this function does not take into account chunk boundaries.
 #'
 #' @param band_samples Samples of chunks of Mel-filterbank energy features. Typically created with \code{get_band_samples}.
 #' @param n_cols Number of columns that should be sampled. Defaults to \code{20}.

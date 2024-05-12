@@ -1,6 +1,6 @@
-#' Sample chunks of Mel-filterbank energy features
+#' Note: This function is deprecated
 #'
-#' @description This function samples \code{n} columns of Mel-filterbank energy features as range, i.e. the order of columns is retained. Also provides some summary measures: first and last value, min and max value, and median of each column. Note: Currently, this function does not take into account chunk boundaries.
+#' @description Note: This function is deprecated. This function samples \code{n} columns of Mel-filterbank energy features as range, i.e. the order of columns is retained. Also provides some summary measures: first and last value, min and max value, and median of each column. Note: Currently, this function does not take into account chunk boundaries.
 #'
 #' @param mel_features List of Mel-filterbank energy features. Typically created with \code{get_mel}.
 #' @param n_cols Number of columns that should be sampled. Defaults to \code{20}.
