@@ -33,7 +33,7 @@ devtools::install_github("dosc91/CFBSr")
 
 Please cite the `CFBSr` package as follows:
 
-Schmitz, D. (2024). CFBSr: Create Continuous Frequency Band Summaries from Sound and TextGrid Files. R package version 0.2.0. URL: https://github.com/dosc91/CFBSr
+Schmitz, D. (2024). CFBSr: Create Continuous Frequency Band Summaries from Sound and TextGrid Files. R package version 0.3.0. URL: https://github.com/dosc91/CFBSr
 
 
 The following sources are made use of in the `CFBSr` package:
