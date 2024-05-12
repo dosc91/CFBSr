@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">CFBSr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.3.0</span>
       </span>
     </div>
 
@@ -49,7 +49,8 @@
 <span>  <span class="va">main_tier</span>,</span>
 <span>  extra_tier <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  encoding <span class="op">=</span> <span class="st">"auto"</span>,</span>
-<span>  skip <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span>  skip <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  extra_tier_number <span class="op">=</span> <span class="fl">1</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -73,6 +74,10 @@
 
 <dt>skip</dt>
 <dd><p>Decides whether the function stops (default) or continues after encountering different numbers of non-empty intervals on <code>main_tier</code> and <code>extra_tier</code>. If set to <code>TRUE</code> it will continue and print files with discrepancies to the console.</p></dd>
+
+
+<dt>extra_tier_number</dt>
+<dd><p>In case of multiple tiers with the specified <code>extra_tier</code> name, please choose whether the first, second, or nth interval of the same name should be used. Defaults to <code>1</code>.</p></dd>
 
 </dl></div>
     <div id="value">
