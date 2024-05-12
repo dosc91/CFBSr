@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_band_correlations.R
 \name{get_band_correlations}
 \alias{get_band_correlations}
-\title{Compute correlations between columns of Mel-filterbank energy features}
+\title{Note: This function is deprecated}
 \usage{
 get_band_correlations(band_samples, n_cols = 20, method = "spearman")
 }
@@ -17,7 +17,7 @@ get_band_correlations(band_samples, n_cols = 20, method = "spearman")
 A data frame.
 }
 \description{
-This function computes correlations between columns of Mel-filterbank energy features. Note: Currently, this function does not take into account chunk boundaries.
+Note: This function is deprecated. This function computes correlations between columns of Mel-filterbank energy features. Note: Currently, this function does not take into account chunk boundaries.
 }
 \examples{
 \dontrun{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_band_samples.R
 \name{get_band_samples}
 \alias{get_band_samples}
-\title{Sample chunks of Mel-filterbank energy features}
+\title{Note: This function is deprecated}
 \usage{
 get_band_samples(mel_features, n_cols = 20, connected = TRUE, seed = 16121991)
 }
@@ -19,7 +19,7 @@ get_band_samples(mel_features, n_cols = 20, connected = TRUE, seed = 16121991)
 A data frame.
 }
 \description{
-This function samples \code{n} columns of Mel-filterbank energy features as range, i.e. the order of columns is retained. Also provides some summary measures: first and last value, min and max value, and median of each column. Note: Currently, this function does not take into account chunk boundaries.
+Note: This function is deprecated. This function samples \code{n} columns of Mel-filterbank energy features as range, i.e. the order of columns is retained. Also provides some summary measures: first and last value, min and max value, and median of each column. Note: Currently, this function does not take into account chunk boundaries.
 }
 \examples{
 \dontrun{band_samples <- get_band_samples(mel_features = mel_features, n_cols = 20)}
